@@ -1,0 +1,109 @@
+.blog-post-page {
+  background: #fff;
+}
+
+.blog-post-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+    url('https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1600');
+  background-size: cover;
+  background-position: center;
+  padding: calc(var(--header-height) + 3rem) 0 4rem;
+}
+
+.blog-post-hero-container {
+  max-width: 860px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-post-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(42, 121, 135, 0.2);
+  border: 1px solid rgba(42, 121, 135, 0.4);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  color: #fff;
+}
+
+.blog-post-title {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.blog-post-meta {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.blog-post-body {
+  padding: 4.5rem 0 5rem;
+  background: #f3f6fb;
+}
+
+.blog-post-body-container {
+  max-width: 960px;
+  display: grid;
+  gap: 2rem;
+}
+
+.blog-post-image img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.16);
+}
+
+.blog-post-content {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2.25rem 2.2rem;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: #4b5563;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.blog-post-back {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .blog-post-hero {
+    min-height: 50vh;
+    padding: calc(var(--header-height) + 2.5rem) 0 3.5rem;
+  }
+
+  .blog-post-content {
+    padding: 1.75rem 1.5rem;
+  }
+}

@@ -1,0 +1,127 @@
+.service-page {
+  background: #fff;
+}
+
+.service-hero {
+  min-height: 100svh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+    url("/Images/services.png");
+  background-size: cover;
+  background-position: center;
+  padding: calc(var(--header-height) + 3rem) 0 4rem;
+}
+
+.service-hero-container {
+  max-width: 860px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(42, 121, 135, 0.2);
+  border: 1px solid rgba(42, 121, 135, 0.4);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  color: #fff;
+}
+
+.service-hero-title {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.service-hero-subtitle {
+  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+  max-width: 640px;
+  margin: 0 0 2rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.service-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  background: var(--cta);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--cta);
+  transition: all 0.2s ease;
+}
+
+.service-hero-cta:hover {
+  background: var(--cta-dark);
+  color: #fff;
+  border-color: var(--cta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px var(--cta-shadow);
+}
+
+.service-content {
+  padding: 4.5rem 0;
+  background: #fff;
+}
+
+.service-content-container {
+  max-width: 960px;
+}
+
+.service-content h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.service-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .service-hero {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+      url("/Images/renovation-mobile.png");
+    min-height: 100svh;
+    min-height: 100vh;
+    padding: calc(var(--header-height) + 2.5rem) 0 3.5rem;
+  }
+
+  .service-hero-cta {
+    width: 100%;
+    display: flex;
+  }
+
+  .service-hero-subtitle {
+    margin-bottom: 1.6rem;
+  }
+}

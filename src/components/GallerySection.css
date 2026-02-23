@@ -1,0 +1,153 @@
+/* Gallery Section */
+.gallery-section {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  padding: var(--spacing-2xl) 0;
+  position: relative;
+}
+
+/* Gallery Header */
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: var(--spacing-2xl);
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.gallery-header-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.gallery-label {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-md);
+}
+
+.gallery-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.gallery-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: var(--text-dark);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+/* Masonry Gallery */
+.masonry-gallery {
+  column-count: 4;
+  column-gap: var(--spacing-md);
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.gallery-item-tall img {
+  height: 400px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .masonry-gallery {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .gallery-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .gallery-header-right {
+    width: 100%;
+  }
+
+  .btn-outline-light {
+    width: 100%;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+
+  .masonry-gallery {
+    column-count: 2;
+    column-gap: var(--spacing-sm);
+  }
+
+  .gallery-item {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .gallery-item-tall img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
+
+  .gallery-title {
+    font-size: 1.75rem;
+  }
+
+  .gallery-label {
+    font-size: 0.75rem;
+  }
+}
+
+

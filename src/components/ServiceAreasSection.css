@@ -1,0 +1,71 @@
+.service-areas-section {
+  background: #081a2b;
+  color: #fff;
+  padding: 4.5rem 0 5rem;
+}
+
+.service-areas-container {
+  max-width: 1160px;
+}
+
+.service-areas-layout {
+  display: block;
+}
+
+.service-areas-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-areas-content h2 {
+  margin: 0;
+  font-size: clamp(2.4rem, 3.8vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.service-areas-content h2 span {
+  display: block;
+}
+
+.service-areas-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 2.2rem;
+}
+
+.service-area-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.service-area-pin {
+  width: 1rem;
+  height: 1rem;
+  color: #2A7987;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .service-areas-layout {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-areas-section {
+    padding: 3.5rem 0 4rem;
+  }
+
+  .service-areas-list {
+    grid-template-columns: 1fr;
+  }
+}

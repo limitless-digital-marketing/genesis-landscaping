@@ -1,0 +1,83 @@
+.services-hero {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+    url('/Images/services.png');
+}
+
+.services-list-section {
+  padding: 4.5rem 0 5rem;
+  background: #f3f6fb;
+}
+
+.services-list-container {
+  max-width: 1100px;
+}
+
+.services-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+
+.services-list-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 100%;
+}
+
+.services-list-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.18);
+}
+
+.services-list-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2A7987;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.services-list-copy {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.services-list-link {
+  font-weight: 700;
+  color: #2A7987;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+.services-list-card:hover .services-list-link {
+  color: #2A7987;
+}
+
+@media (max-width: 1024px) {
+  .services-list-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+      url('/Images/renovation-mobile.png');
+  }
+
+  .services-list-grid {
+    grid-template-columns: 1fr;
+  }
+}

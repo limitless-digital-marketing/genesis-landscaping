@@ -1,0 +1,85 @@
+.curved-cta {
+  position: relative;
+  background: #8E4F57;
+  padding: 8rem 0;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('/Images/brisbane-city-skyline.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.curved-cta-content {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.curved-cta-content h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.curved-cta-content p {
+  margin: 0 0 2rem;
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.curved-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  background: var(--cta);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--cta);
+  transition: all 0.2s ease;
+}
+
+.curved-cta-button:hover {
+  background: var(--cta-dark);
+  color: #fff;
+  border-color: var(--cta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px var(--cta-shadow);
+}
+
+
+@media (max-width: 1024px) {
+  .curved-cta {
+    padding: 6.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .curved-cta {
+    padding: 5.5rem 0;
+  }
+
+  .curved-cta-button {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media (max-width: 540px) {
+  .curved-cta {
+    padding: 3.5rem 0;
+  }
+}
