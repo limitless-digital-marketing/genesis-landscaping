@@ -1,6 +1,6 @@
-# McKays Plumbing and Gasfitting Website
+# Genesis Landscaping Website
 
-A modern, conversion-focused website for McKays Plumbing and Gasfitting.
+A modern, conversion-focused website for Genesis Landscaping.
 
 ## Development
 

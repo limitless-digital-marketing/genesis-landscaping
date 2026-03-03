@@ -1,11 +1,11 @@
 .curved-cta {
   position: relative;
-  background: #8E4F57;
+  background: #4F7D3A;
   padding: 8rem 0;
   text-align: center;
   color: #fff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('/Images/brisbane-city-skyline.jpg');
+    url('/Images/landscaping-image-1.webp');
   background-size: cover;
   background-position: center;
 }
@@ -18,17 +18,8 @@
 }
 
 .curved-cta-content h2 {
-  margin: 0 0 0.75rem;
-  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.curved-cta-content p {
   margin: 0 0 2rem;
-  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -51,15 +42,6 @@
   border: 2px solid var(--cta);
   transition: all 0.2s ease;
 }
-
-.curved-cta-button:hover {
-  background: var(--cta-dark);
-  color: #fff;
-  border-color: var(--cta-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px var(--cta-shadow);
-}
-
 
 @media (max-width: 1024px) {
   .curved-cta {

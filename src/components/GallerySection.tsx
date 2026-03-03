@@ -8,16 +8,15 @@ interface GalleryImage {
 }
 
 const GallerySection = () => {
-  // Placeholder images - replace with real plumbing work photos
   const galleryImages: GalleryImage[] = [
-    { id: 1, url: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800', alt: 'Bathroom renovation', tall: true },
-    { id: 2, url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800', alt: 'Kitchen plumbing' },
-    { id: 3, url: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800', alt: 'Hot water installation' },
-    { id: 4, url: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800', alt: 'Pipe repair', tall: true },
-    { id: 5, url: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=800', alt: 'Bathroom fixtures' },
-    { id: 6, url: 'https://images.unsplash.com/photo-1584622781867-4f34c1fad77b?w=800', alt: 'Drain cleaning' },
-    { id: 7, url: 'https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=800', alt: 'Modern bathroom' },
-    { id: 8, url: 'https://images.unsplash.com/photo-1595514535116-2b9b571f6a2b?w=800', alt: 'Plumbing work', tall: true },
+    { id: 1, url: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800', alt: 'Landscaped front garden with lawn', tall: true },
+    { id: 2, url: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800', alt: 'Fresh planting and garden bed detail' },
+    { id: 3, url: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800', alt: 'Low-maintenance garden design planting' },
+    { id: 4, url: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800', alt: 'Large property landscaping project', tall: true },
+    { id: 5, url: 'https://images.unsplash.com/photo-1466692052106-e5cf528f34ce?w=800', alt: 'Lawn and garden installation work' },
+    { id: 6, url: 'https://images.unsplash.com/photo-1473447198193-c83a3d7c1f2f?w=800', alt: 'Backyard landscaping layout and planting' },
+    { id: 7, url: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800', alt: 'Garden restoration greenery and pathways' },
+    { id: 8, url: 'https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=800', alt: 'Finished residential landscaping presentation', tall: true },
   ]
 
   return (
@@ -57,4 +56,3 @@ const GallerySection = () => {
 }
 
 export default GallerySection
-

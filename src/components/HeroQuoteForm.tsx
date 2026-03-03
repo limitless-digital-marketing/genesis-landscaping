@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const LEAD_ENDPOINT = 'https://www.buildwithlimitless.com/api/new-lead'
-const CLIENT_ID = 'd3553ace-cbd5-4af6-b3be-b5fb1610197c'
+const CLIENT_ID = 'd0de1b8e-92cc-4ab0-b189-8e40f15aeec4'
 
 const HeroQuoteForm = () => {
   const [formData, setFormData] = useState({
@@ -69,7 +69,7 @@ const HeroQuoteForm = () => {
         setFormData({ name: '', phone: '', email: '', message: '', hp: '' })
       }, 3000)
     } catch (err) {
-      setError('Something went wrong. Please try again or call us directly.')
+      setError('Something went wrong. Please try again or call us directly on 0403 297 672.')
     } finally {
       setSubmitting(false)
     }
@@ -110,7 +110,7 @@ const HeroQuoteForm = () => {
             type="tel"
             name="phone"
             id="hero-phone"
-            placeholder="+61 123 456 789 *"
+            placeholder="0403 297 672 *"
             required
             value={formData.phone}
             onChange={handleChange}
@@ -155,7 +155,7 @@ const HeroQuoteForm = () => {
         <textarea
           name="message"
           id="hero-message"
-          placeholder="Your message goes straight to my phone. I'll get back to you as soon as I'm available."
+          placeholder="Tell us what you need (new build landscaping, turf, garden beds, cleanup, etc.)."
           value={formData.message}
           onChange={handleChange}
           className="hero-form-input"

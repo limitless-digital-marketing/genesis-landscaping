@@ -1,6 +1,6 @@
 /* FAQ Section */
 .faq-section {
-  background: #081a2b;
+  background: #10261B;
   padding: var(--spacing-2xl) 0;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -18,8 +18,8 @@
   align-items: center;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  background: rgba(42, 121, 135, 0.2);
-  border: 1px solid rgba(42, 121, 135, 0.4);
+  background: rgba(47, 125, 50, 0.2);
+  border: 1px solid rgba(47, 125, 50, 0.4);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -89,10 +89,6 @@
   color: white;
   transition: color 0.2s ease;
   gap: 0;
-}
-
-.faq-question:hover {
-  color: rgba(255, 255, 255, 0.8);
 }
 
 .faq-icon {

@@ -4,66 +4,67 @@ import ServiceAreasSection from '../components/ServiceAreasSection'
 import ReviewsSection from '../components/ReviewsSection'
 import FAQSection from '../components/FAQSection'
 import HeroQuoteForm from '../components/HeroQuoteForm'
+import PageSeo from '../components/PageSeo'
 import './HomePage.css'
 
 const galleryImages = [
   {
     id: 1,
-    url: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200',
-    alt: 'Bathroom renovation'
+    url: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200',
+    alt: 'Modern landscaped front yard'
   },
   {
     id: 2,
-    url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200',
-    alt: 'Kitchen plumbing'
+    url: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1200',
+    alt: 'Freshly planted garden bed'
   },
   {
     id: 3,
-    url: 'https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1200',
-    alt: 'Hot water installation'
+    url: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1200',
+    alt: 'Garden design planting details'
   },
   {
     id: 4,
-    url: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1200',
-    alt: 'Leak repair'
+    url: 'https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?w=1200',
+    alt: 'Landscaped outdoor path'
   },
   {
     id: 5,
-    url: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200',
-    alt: 'Bathroom fixtures'
+    url: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1200',
+    alt: 'Garden restoration greenery'
   },
   {
     id: 6,
-    url: 'https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?w=1200',
-    alt: 'Drain work'
+    url: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200',
+    alt: 'Large property landscaping'
   },
   {
     id: 7,
-    url: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200',
-    alt: 'Modern bathroom'
+    url: 'https://images.unsplash.com/photo-1473447198193-c83a3d7c1f2f?w=1200',
+    alt: 'Backyard garden layout'
   },
   {
     id: 8,
-    url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200',
-    alt: 'House plumbing'
+    url: 'https://images.unsplash.com/photo-1460533893735-45cea2212645?w=1200',
+    alt: 'Outdoor landscaped garden beds'
   },
   {
     id: 9,
-    url: 'https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1200',
-    alt: 'Window install'
+    url: 'https://images.unsplash.com/photo-1466692052106-e5cf528f34ce?w=1200',
+    alt: 'Lawn and plant installation'
   },
   {
     id: 10,
-    url: 'https://images.unsplash.com/photo-1493666438817-866a91353ca9?w=1200',
-    alt: 'Outdoor plumbing'
+    url: 'https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=1200',
+    alt: 'Residential landscaping finish'
   }
 ]
 
 const heroBenefitPoints = [
   {
     id: 1,
-    title: 'Upfront Pricing',
-    subtitle: 'Competitive affordable plumbers',
+    title: 'Residential & Commercial',
+    subtitle: 'New builds and property upgrades',
     icon: (
       <svg viewBox="0 0 24 24" className="hero-benefit-icon" aria-hidden="true">
         <path
@@ -75,8 +76,8 @@ const heroBenefitPoints = [
   },
   {
     id: 2,
-    title: 'Licensed and Insured',
-    subtitle: 'Over 25 years experience',
+    title: 'Design To Install',
+    subtitle: 'Garden plans, turf, beds, and plants',
     icon: (
       <svg viewBox="0 0 24 24" className="hero-benefit-icon" aria-hidden="true">
         <path
@@ -88,8 +89,8 @@ const heroBenefitPoints = [
   },
   {
     id: 3,
-    title: 'Honest & On Time',
-    subtitle: 'We travel to all areas of Brisbane',
+    title: 'Local & Reliable',
+    subtitle: 'Based in Casuarina NSW',
     icon: (
       <svg viewBox="0 0 24 24" className="hero-benefit-icon" aria-hidden="true">
         <path
@@ -101,8 +102,8 @@ const heroBenefitPoints = [
   },
   {
     id: 4,
-    title: 'Same Day Service',
-    subtitle: "Don't wait call us today!",
+    title: 'Clean Finishes',
+    subtitle: 'Tidy workmanship and site presentation',
     icon: (
       <svg viewBox="0 0 24 24" className="hero-benefit-icon" aria-hidden="true">
         <path
@@ -114,13 +115,66 @@ const heroBenefitPoints = [
   }
 ]
 
+const popularServiceCards = [
+  {
+    slug: 'garden-design',
+    title: 'Landscape Design',
+    description:
+      'Transform your backyard with our custom landscape design services tailored to suit you and your lifestyle.',
+    image: '/Images/landscape-design.webp',
+    icon: (
+      <svg viewBox="0 0 24 24" className="service-grid-icon" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M12 3c3.6 2.3 5.4 5.1 5.4 8.2a5.4 5.4 0 1 1-10.8 0C6.6 8.1 8.4 5.3 12 3zm-1 13.1V21h2v-4.9h-2z"
+        />
+      </svg>
+    )
+  },
+  {
+    slug: 'garden-beds-edging',
+    title: 'Retaining Walls',
+    description:
+      'We build quality retaining walls in a variety of materials including concrete sleepers and sandstone.',
+    image: '/Images/retaining-walls.webp',
+    icon: (
+      <svg viewBox="0 0 24 24" className="service-grid-icon" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M2 19h20v2H2v-2zm2-8h16v6H4v-6zm0-6h7v4H4V5zm9 0h7v4h-7V5z"
+        />
+      </svg>
+    )
+  },
+  {
+    slug: 'new-build-landscaping',
+    title: 'Deck Builders',
+    description:
+      'Quality timber or composite decks, perfect for entertaining or relaxing with a cuppa.',
+    image: '/Images/dock-builders.webp',
+    icon: (
+      <svg viewBox="0 0 24 24" className="service-grid-icon" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M3 19h18v2H3v-2zm1-2h16v-3H4v3zm0-5h16V9H4v3zm2-5h12V5H6v2z"
+        />
+      </svg>
+    )
+  }
+]
+
 const HomePage = () => {
   return (
     <div className="homepage">
+      <PageSeo
+        title="Genesis Landscaping | Casuarina NSW Landscaping Services"
+        description="Genesis Landscaping provides new build landscaping, turf installation, garden design, restorations, and yard clean ups in Casuarina NSW and surrounding areas."
+      />
+
       {/* Hero Section */}
       <section className="hero">
         <img
-          src="/Images/home-hero-mobile.png"
+          src="/Images/homepage-hero-mobile.webp"
           alt=""
           className="hero-mobile-image"
           aria-hidden="true"
@@ -129,51 +183,42 @@ const HomePage = () => {
           <div className="hero-grid">
             {/* Left Column - Headline & Value Prop */}
             <div className="hero-content">
-              <div className="hero-badge">
-                <span className="hero-badge-logo" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="22" height="22">
-                    <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.4h6.5c-.3 1.6-1.2 3-2.6 3.9v3h4.2c2.5-2.3 3.9-5.6 3.9-9z"/>
-                    <path fill="#34A853" d="M12 24c3.3 0 6.1-1.1 8.2-3.1l-4.2-3c-1.2.8-2.7 1.3-4 1.3-3.1 0-5.7-2.1-6.6-4.9H1v3.1C3.1 21.1 7.3 24 12 24z"/>
-                    <path fill="#FBBC05" d="M5.4 14.3c-.2-.6-.4-1.3-.4-2s.1-1.4.4-2V7.2H1C.3 8.7 0 10.3 0 12s.3 3.3 1 4.8l4.4-2.5z"/>
-                    <path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.5 1.8l3.4-3.4C17.9 1.2 15.2 0 12 0 7.3 0 3.1 2.9 1 7.2l4.4 3.1C6.3 6.9 8.9 4.8 12 4.8z"/>
-                  </svg>
+              <div className="hero-review-pill" aria-label="5.0 star rating from 47 reviews">
+                <span className="hero-review-pill-icon" aria-hidden="true">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/3840px-Google_%22G%22_logo.svg.png"
+                    alt=""
+                    className="hero-review-pill-logo"
+                    loading="lazy"
+                  />
                 </span>
-                <span className="hero-badge-pin" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      fill="currentColor"
-                      d="M12 2c3.9 0 7 3.1 7 7 0 5.2-7 13-7 13S5 14.2 5 9c0-3.9 3.1-7 7-7zm0 9.2a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z"
-                    />
-                  </svg>
+                <span className="hero-review-pill-icon" aria-hidden="true">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png"
+                    alt=""
+                    className="hero-review-pill-logo"
+                    loading="lazy"
+                  />
                 </span>
-                <span className="hero-badge-stars" aria-label="5 out of 5 stars">
-                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-                    <path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/>
-                  </svg>
-                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-                    <path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/>
-                  </svg>
-                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-                    <path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/>
-                  </svg>
-                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-                    <path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/>
-                  </svg>
-                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-                    <path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/>
-                  </svg>
+                <span className="hero-review-pill-score">5.0</span>
+                <span className="hero-review-pill-stars" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.1 6.7.9-4.8 4.6 1.2 6.6L12 17.8 6 20.2l1.2-6.6L2.4 9l6.7-.9L12 2z"/></svg>
                 </span>
-                <span className="hero-badge-text hero-badge-text-desktop">5-Star Reviews</span>
+                <span className="hero-review-pill-count">(11)</span>
               </div>
               <h1>
-                MCKAY’S
-                <span className="hero-headline-line hero-headline-nowrap">PLUMBING &amp; GASFITTING</span>
+                WELCOME TO GENESIS
+                <span className="hero-headline-line hero-headline-nowrap">LANDSCAPING</span>
               </h1>
-              <p className="hero-subheading">Servicing Ipswich, Brisbane and Surrounds</p>
+              <p className="hero-subheading">New Residential &amp; Commercial Landscaping</p>
               <p className="hero-description">
-                Domestic plumbing and gasfitting for all types of dwellings, including renovations, drain cleaning,
-                gas piping and bottle connections, cooktops, hot water systems, water filters, septic tanks, and
-                general maintenance repairs.
+                Clean, professional landscaping for new builds and outdoor upgrades. We handle sod installation,
+                garden design and restorations, yard clean ups, garden beds, artificial turf, and plant installation
+                across Casuarina and surrounding areas.
               </p>
               <div className="hero-mobile-cta">
                 <a
@@ -183,7 +228,7 @@ const HomePage = () => {
                     event.preventDefault()
                     document.getElementById('quote-section')?.scrollIntoView({
                       behavior: 'smooth',
-                      block: 'center'
+                      block: 'start'
                     })
                   }}
                 >
@@ -201,8 +246,8 @@ const HomePage = () => {
             <div className="hero-form-container hero-form-container-desktop">
               <div className="hero-form-card">
                 <img
-                  src="/Images/brads-plumbing-logo.png"
-                  alt="McKay’s Plumbing and Gasfitting"
+                  src="/Images/logo-white-text.png"
+                  alt="Genesis Landscaping logo"
                   className="form-logo"
                 />
                 <HeroQuoteForm />
@@ -212,7 +257,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="hero-benefits-strip" aria-label="McKay’s Plumbing and Gasfitting key benefits">
+      <section className="hero-benefits-strip" aria-label="Genesis Landscaping key benefits">
         <div className="container hero-benefits-strip-container">
           {heroBenefitPoints.map((benefit) => (
             <article className="hero-benefit-point" key={benefit.id}>
@@ -226,11 +271,14 @@ const HomePage = () => {
 
       <section className="hero-quote-section" id="quote-section">
         <div className="container">
+          <div className="hero-quote-intro">
+            <h2>Get Your Free Quote Today</h2>
+          </div>
           <div className="hero-form-container hero-form-container-quote">
             <div className="hero-form-card">
               <img
-                src="/Images/brads-plumbing-logo.png"
-                alt="McKay’s Plumbing and Gasfitting"
+                src="/Images/logo-white-text.png"
+                alt="Genesis Landscaping logo"
                 className="form-logo"
               />
               <HeroQuoteForm />
@@ -249,36 +297,15 @@ const HomePage = () => {
                 <span className="about-accent-line" aria-hidden="true"></span>
               </div>
               <p>
-                Brad is a hands-on plumber and gasfitter who takes pride in turning up on time, doing the job properly,
-                and leaving your home clean and tidy. Whether it is a renovation, general maintenance, drain cleaning,
-                pipe and leak repairs, or hot water system work, Brad keeps the process clear and straightforward so you
-                always know what is happening.
+                Genesis Landscaping is a hands-on landscaping business based in Casuarina NSW, led by Jett Paludan.
+                We specialise in landscaping for new residential and commercial builds, plus garden restorations and
+                outdoor refreshes that make properties look finished, clean, and ready to enjoy.
               </p>
-              <div className="about-licence-badges">
-                <span className="licence-badge">
-                  <svg className="licence-badge-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill="currentColor" d="M12 2 4 5v5.8c0 5.2 3.5 10.1 8 11.2 4.5-1.1 8-6 8-11.2V5L12 2zm-1.1 13.1-3-3 1.4-1.4 1.6 1.6 3.9-3.9 1.4 1.4-5.3 5.3z"/>
-                  </svg>
-                  <span className="licence-badge-text">
-                    <span className="licence-badge-label">QBCC Licence</span>
-                    <span className="licence-badge-number">15130806</span>
-                  </span>
-                </span>
-                <span className="licence-badge">
-                  <svg className="licence-badge-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill="currentColor" d="M12 2 4 5v5.8c0 5.2 3.5 10.1 8 11.2 4.5-1.1 8-6 8-11.2V5L12 2zm-1.1 13.1-3-3 1.4-1.4 1.6 1.6 3.9-3.9 1.4 1.4-5.3 5.3z"/>
-                  </svg>
-                  <span className="licence-badge-text">
-                    <span className="licence-badge-label">Gas Licence</span>
-                    <span className="licence-badge-number">L93521</span>
-                  </span>
-                </span>
-              </div>
             </div>
             <div className="about-image">
               <img
-                src="/Images/about-us.webp"
-                alt="Plumbing service van"
+                src="/Images/IMG_2214.jpeg"
+                alt="Genesis Landscaping team at work"
                 loading="lazy"
               />
             </div>
@@ -301,66 +328,21 @@ const HomePage = () => {
           </div>
 
           <div className="services-grid">
-            <Link to="/services/renovations" className="service-grid-card">
-              <img
-                src="/Images/renovation.png"
-                alt="Renovation plumbing"
-                loading="lazy"
-              />
-              <div className="service-grid-overlay"></div>
-              <div className="service-grid-label">
-                <div className="service-grid-title-row">
-                  <span className="service-grid-title">RENOVATIONS</span>
-                  <span className="service-grid-arrow" aria-hidden="true">→</span>
+            {popularServiceCards.map((service) => (
+              <article key={service.slug} className="service-grid-card">
+                <div className="service-grid-image-wrap">
+                  <img src={service.image} alt={service.title} loading="lazy" />
                 </div>
-                <span className="service-grid-desc">Plumbing upgrades for kitchens, bathrooms, and laundries.</span>
-              </div>
-            </Link>
-            <Link to="/services/water-heaters" className="service-grid-card">
-              <img
-                src="/Images/water-heaters.png"
-                alt="Water heaters"
-                loading="lazy"
-              />
-              <div className="service-grid-overlay"></div>
-              <div className="service-grid-label">
-                <div className="service-grid-title-row">
-                  <span className="service-grid-title">WATER HEATERS</span>
-                  <span className="service-grid-arrow" aria-hidden="true">→</span>
+                <div className="service-grid-card-body">
+                  <span className="service-grid-icon-wrap">{service.icon}</span>
+                  <h3 className="service-grid-title">{service.title}</h3>
+                  <p className="service-grid-desc">{service.description}</p>
+                  <Link to={`/services/${service.slug}`} className="service-grid-button">
+                    Read More <span aria-hidden="true">→</span>
+                  </Link>
                 </div>
-                <span className="service-grid-desc">Electric, gas, and heat pump hot water systems.</span>
-              </div>
-            </Link>
-            <Link to="/services/drain-cleaning" className="service-grid-card">
-              <img
-                src="/Images/blocked-drains.png"
-                alt="Drain cleaning"
-                loading="lazy"
-              />
-              <div className="service-grid-overlay"></div>
-              <div className="service-grid-label">
-                <div className="service-grid-title-row">
-                  <span className="service-grid-title">DRAIN CLEANING</span>
-                  <span className="service-grid-arrow" aria-hidden="true">→</span>
-                </div>
-                <span className="service-grid-desc">Clear slow drains and stubborn blockages.</span>
-              </div>
-            </Link>
-            <Link to="/services/pipe-leak-repairs" className="service-grid-card">
-              <img
-                src="/Images/leak-detection.png"
-                alt="Pipe and leak repairs"
-                loading="lazy"
-              />
-              <div className="service-grid-overlay"></div>
-              <div className="service-grid-label">
-                <div className="service-grid-title-row">
-                  <span className="service-grid-title">PIPE &amp; LEAK REPAIRS</span>
-                  <span className="service-grid-arrow" aria-hidden="true">→</span>
-                </div>
-                <span className="service-grid-desc">Find and fix leaks fast to prevent damage.</span>
-              </div>
-            </Link>
+              </article>
+            ))}
           </div>
 
           <div className="services-grid-cta-mobile">
@@ -375,7 +357,7 @@ const HomePage = () => {
       <section className="work-gallery-section">
         <div className="container work-gallery-container">
           <div className="work-gallery-header">
-            <span className="work-gallery-label">SEE WHY OUR CUSTOMERS LOVE US</span>
+            <span className="work-gallery-label">SEE WHY CLIENTS CHOOSE US</span>
             <div className="work-gallery-heading-row">
               <h2>SEE OUR WORK</h2>
               <span className="work-gallery-midline" aria-hidden="true"></span>

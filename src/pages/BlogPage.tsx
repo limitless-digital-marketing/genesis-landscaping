@@ -2,330 +2,223 @@ import { Link } from 'react-router-dom'
 import ReviewsSection from '../components/ReviewsSection'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import CurvedCTASection from '../components/CurvedCTASection'
+import PageSeo from '../components/PageSeo'
 import './BlogPage.css'
 
 export const posts = [
   {
-    slug: 'renovation-plumbing-gasfitting',
-    title: 'Renovation Plumbing & Gasfitting: Planning a Smooth Upgrade',
-    date: 'January 30, 2026',
+    slug: 'new-build-landscaping-handover-checklist',
+    title: 'New Build Landscaping: A Practical Handover Checklist',
+    date: 'February 12, 2026',
     excerpt:
-      'What to plan for pipework, fixtures, and gas connections during bathroom, kitchen, and laundry renovations.',
+      'A simple checklist to plan turf, garden beds, planting, and presentation work before handover.',
     image:
-      'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200',
+      'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200',
     sections: [
       {
-        heading: 'Introduction: Renovations Start With Good Planning',
+        heading: 'Start With The Final Look In Mind',
         body:
-          'Plumbing and gasfitting decisions made early can save time, cost, and rework later in a renovation. A clear plan helps coordinate trades and keeps the project moving.'
+          'New build landscaping runs smoother when the end result is planned before installation starts. Mapping out lawn areas, garden beds, and plant zones helps avoid rushed decisions.'
       },
       {
-        heading: 'Scope of Plumbing Work in a Renovation',
+        heading: 'Prioritise Ground Preparation',
         body:
-          'Renovations often involve moving pipework, updating drainage, and installing new fixtures. Kitchens, bathrooms, and laundries each have unique requirements that should be mapped out before walls are closed.'
+          'Good preparation makes a big difference to the final finish and how well the landscape establishes. Levelling, cleaning, and soil preparation should be done before turf or planting is installed.'
       },
       {
-        heading: 'Gasfitting Considerations',
+        heading: 'Sequence Turf, Beds, and Planting',
         body:
-          'If you are updating appliances or adding a gas connection, safe and compliant gasfitting is essential. Proper sizing, ventilation, and appliance placement all affect performance and safety.'
+          'A clean sequence keeps the site tidy and reduces rework. Garden bed shaping and edging usually come before final turf placement, with plants installed once key layout elements are set.'
       },
       {
-        heading: 'Rough-In, Fit-Off, and Finish',
+        heading: 'Plan For Presentation',
         body:
-          'Most renovation plumbing is done in stages. Rough-in happens before linings go in, fit-off happens after tiling and cabinetry, and final adjustments ensure everything works as intended.'
+          'Handover-ready landscaping should look neat and complete. Yard clean-up, mulch, edging details, and plant spacing all help the property present well on day one.'
       },
       {
-        heading: 'Conclusion: A Renovation You Can Enjoy',
+        heading: 'Work With A Clear Scope',
         body:
-          'Good plumbing and gasfitting work helps your renovation look great and function reliably. Plan early and keep communication clear throughout the build.'
+          'A clear scope and timeline keeps the project moving. Confirm inclusions early so everyone knows what will be completed before handover.'
       }
     ]
   },
   {
-    slug: 'domestic-plumbing-maintenance',
-    title: 'Domestic Plumbing Maintenance: A Simple Checklist for Homeowners',
-    date: 'January 22, 2026',
+    slug: 'sod-vs-artificial-turf-which-is-right',
+    title: 'Sod vs Artificial Turf: Which Option Suits Your Yard?',
+    date: 'February 5, 2026',
     excerpt:
-      'Stay ahead of leaks, blockages, and wear with a practical maintenance routine for homes and units.',
+      'Compare look, maintenance, installation, and long-term use when choosing natural turf or synthetic grass.',
     image:
-      'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200',
+      'https://images.unsplash.com/photo-1466692052106-e5cf528f34ce?w=1200',
     sections: [
       {
-        heading: 'Introduction: Maintenance Prevents Emergencies',
+        heading: 'Natural Look vs Low Maintenance',
         body:
-          'Small plumbing issues can become expensive if ignored. Regular checks help spot problems early and keep systems running efficiently.'
+          'Sod offers a natural lawn feel and can look great when maintained well. Artificial turf reduces mowing and regular upkeep, which can suit busy households and investment properties.'
       },
       {
-        heading: 'What to Check Around the Home',
+        heading: 'Installation Matters For Both',
         body:
-          'Inspect taps for drips, showers for leaks, toilets for running cisterns, and outdoor taps for damp spots. Keep an eye on water pressure and listen for unusual pipe noises.'
+          'Whether you choose sod or synthetic grass, base preparation is key. A flat, stable, well-prepared surface helps the lawn look better and last longer.'
       },
       {
-        heading: 'Drains and Fixtures',
+        heading: 'How The Space Is Used',
         body:
-          'Slow drains or gurgling sounds are early signs of blockages. Clean strainers, avoid grease build-up, and address issues before they become full blockages.'
+          'The best option often depends on how the space is used. High-use zones, narrow side yards, and feature areas may benefit from artificial turf, while larger lawns may suit natural turf.'
       },
       {
-        heading: 'When to Call a Plumber',
+        heading: 'Budget and Ongoing Care',
         body:
-          'If you notice leaks, sewer smells, or persistent drainage problems, it is best to book a professional inspection. Early fixes are usually faster and more affordable.'
+          'Sod and artificial turf have different upfront and ongoing costs. Comparing installation budget, maintenance time, and the desired look can help narrow the choice.'
       },
       {
-        heading: 'Conclusion: Protect Your Property',
+        heading: 'Get Advice Before You Commit',
         body:
-          'A simple maintenance routine keeps your plumbing reliable and reduces the risk of unexpected breakdowns.'
+          'If you are unsure, a site inspection can help confirm what will work best for your yard layout and maintenance goals.'
       }
     ]
   },
   {
-    slug: 'drain-cleaning-blocked-drains',
-    title: 'Drain Cleaning & Blocked Drains: Causes, Signs, and Fixes',
-    date: 'January 15, 2026',
+    slug: 'garden-design-for-low-maintenance-yards',
+    title: 'Garden Design Ideas for a Clean, Low-Maintenance Yard',
+    date: 'January 29, 2026',
     excerpt:
-      'Learn what causes blocked drains, how to spot them early, and why professional drain cleaning is worth it.',
+      'Smart layout choices can make your outdoor space look fresh without becoming high maintenance.',
     image:
-      'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1200',
+      'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1200',
     sections: [
       {
-        heading: 'Introduction: Blocked Drains Are Common',
+        heading: 'Start With Zones',
         body:
-          'Kitchen sinks, showers, and floor wastes are frequent sources of blockages. Knowing the early warning signs helps avoid overflows and damage.'
+          'Dividing the yard into lawn, planting, and access zones creates a cleaner layout. This makes the space easier to use and easier to maintain over time.'
       },
       {
-        heading: 'What Causes Drain Blockages',
+        heading: 'Use Defined Garden Beds',
         body:
-          'Grease, soap build-up, hair, and foreign objects are the usual culprits indoors. Outdoors, tree roots and debris can block storm water and sewer lines.'
+          'Well-shaped garden beds and clear edging give the yard structure. They also make mowing lines cleaner and reduce the spread of grass into planting areas.'
       },
       {
-        heading: 'Signs Your Drain Needs Cleaning',
+        heading: 'Choose Plant Groupings Carefully',
         body:
-          'Slow drainage, gurgling noises, bad smells, or water backing up are all signs of a developing blockage.'
+          'Planting in clusters with similar care needs helps the garden stay balanced and easier to manage. It also creates a stronger visual result than scattered planting.'
       },
       {
-        heading: 'How Professionals Clear Drains',
+        heading: 'Mulch For Presentation and Practicality',
         body:
-          'A plumber will assess the issue, locate the blockage, and clear it safely using the right tools. Proper cleaning removes build-up instead of pushing it deeper.'
+          'Mulch improves presentation while helping with weed control and moisture retention. It is a simple finishing step that lifts the look of a fresh garden install.'
       },
       {
-        heading: 'Conclusion: Keep Water Moving',
+        heading: 'Keep It Cohesive',
         body:
-          'Regular drain cleaning keeps your plumbing healthy and reduces the chance of major repairs.'
+          'A clean landscaping result usually comes from consistent materials, spacing, and bed lines. Simple, consistent choices often look the best.'
       }
     ]
   },
   {
-    slug: 'tap-repair-installation',
-    title: 'Tap Repair & Installation: Fixing Leaks and Upgrading Fixtures',
-    date: 'January 8, 2026',
+    slug: 'garden-restoration-where-to-start',
+    title: 'Garden Restoration: Where to Start With an Overgrown Yard',
+    date: 'January 21, 2026',
     excerpt:
-      'From dripping taps to new mixers, learn when to repair and when to upgrade.',
+      'A step-by-step approach to restoring tired garden areas without wasting time or budget.',
     image:
-      'https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1200',
+      'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1200',
     sections: [
       {
-        heading: 'Introduction: Small Leaks Add Up',
+        heading: 'Clear and Assess First',
         body:
-          'A dripping tap wastes water and can damage cabinetry over time. Quick repairs can prevent bigger issues.'
+          'The first step in a restoration is clearing the site so the layout is visible again. Once the area is clean, it is easier to decide what can stay and what should be replaced.'
       },
       {
-        heading: 'Common Tap Problems',
+        heading: 'Rebuild The Structure',
         body:
-          'Worn washers, damaged cartridges, and loose fittings are common causes of leaks and low pressure.'
+          'Restoration work usually starts with the main shapes of the yard, such as beds, edges, and lawn zones. Re-establishing structure creates the foundation for the final result.'
       },
       {
-        heading: 'When to Repair vs Replace',
+        heading: 'Refresh Planting and Turf',
         body:
-          'If a tap is old or corroded, replacement can be more cost effective. New mixers also improve usability and water efficiency.'
+          'New plants and fresh turf can quickly lift the look of a restored garden. The key is matching the planting layout to the space and how you want to use it.'
       },
       {
-        heading: 'Professional Installation',
+        heading: 'Finish With Clean Details',
         body:
-          'Correct installation ensures taps seal properly, align with fixtures, and meet water pressure requirements.'
+          'A tidy finish makes a restoration look complete. Mulch, edging clean-up, and waste removal all improve the final presentation.'
       },
       {
-        heading: 'Conclusion: Get the Right Result',
+        heading: 'Plan For Ongoing Upkeep',
         body:
-          'Whether repairing or installing, professional workmanship keeps taps working smoothly for years.'
+          'Even simple maintenance planning can help a restored yard stay looking good longer. Small touch-ups are easier than another full reset later.'
       }
     ]
   },
   {
-    slug: 'pipe-leak-repairs',
-    title: 'Pipe & Leak Repairs: Stop Water Damage Early',
-    date: 'December 18, 2025',
+    slug: 'yard-clean-up-before-sale-or-rent',
+    title: 'Yard Clean Up Before Sale or Rent: Fast Wins That Improve Presentation',
+    date: 'January 14, 2026',
     excerpt:
-      'Leaking pipes can cause major damage quickly. Here is how repairs work and what to watch for.',
+      'Quick landscaping improvements can dramatically improve curb appeal before listing a property.',
     image:
-      'https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1200',
+      'https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=1200',
     sections: [
       {
-        heading: 'Introduction: Leaks Should Never Be Ignored',
+        heading: 'Presentation Starts at the Street',
         body:
-          'Even a small leak can damage walls, floors, and cabinetry. Early repairs reduce costs and inconvenience.'
+          'First impressions are shaped before anyone steps inside. A clean front yard, trimmed beds, and tidy lawn can improve how the whole property feels.'
       },
       {
-        heading: 'Common Leak Indicators',
+        heading: 'Remove Clutter and Green Waste',
         body:
-          'Water stains, musty smells, low pressure, and unexplained high bills are often signs of hidden leaks.'
+          'Clearing debris, overgrowth, and unused materials immediately improves the space. It also makes the yard look larger and easier to maintain.'
       },
       {
-        heading: 'How Leak Repairs Are Done',
+        heading: 'Refresh Lawn and Garden Beds',
         body:
-          'A plumber locates the source, isolates the affected section, and repairs or replaces damaged pipework.'
+          'Spot repairs, fresh turf, new mulch, and simple planting upgrades can make a big visual impact without a full redesign.'
       },
       {
-        heading: 'Preventing Future Leaks',
+        heading: 'Focus on Entry Areas',
         body:
-          'Quality materials and correct installation reduce the risk of repeat failures. Regular checks also help catch problems early.'
+          'Pathways, front entries, and visible corners are high-impact zones. Cleaning these areas up first often gives the best return on effort.'
       },
       {
-        heading: 'Conclusion: Protect Your Home',
+        heading: 'Keep the Scope Practical',
         body:
-          'Fast, professional leak repairs keep your property safe and your plumbing reliable.'
+          'For pre-sale and pre-rent work, practical improvements usually matter more than overbuilding. Aim for clean, tidy, and move-in ready.'
       }
     ]
   },
   {
-    slug: 'sewer-blockages-repairs',
-    title: 'Sewer Blockages & Repairs: Keep Your System Flowing',
-    date: 'December 10, 2025',
+    slug: 'plant-selection-for-coastal-style-gardens',
+    title: 'Plant Selection Tips for Coastal-Style Gardens',
+    date: 'January 7, 2026',
     excerpt:
-      'Understand the warning signs of sewer issues and why professional repairs matter.',
+      'Planning planting layouts with local conditions in mind helps your garden look better and establish well.',
     image:
-      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200',
+      'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1200',
     sections: [
       {
-        heading: 'Introduction: Sewer Problems Need Fast Attention',
+        heading: 'Design For the Site Conditions',
         body:
-          'Sewer blockages can cause overflows, bad odours, and property damage. Early action helps avoid larger repairs.'
+          'Every property is different, so planting plans should consider sun, shade, wind exposure, and how the space is used. This helps the layout stay practical as well as attractive.'
       },
       {
-        heading: 'Common Causes of Sewer Blockages',
+        heading: 'Use Layering and Clusters',
         body:
-          'Tree roots, grease build-up, foreign objects, and collapsed pipes are typical causes of sewer issues.'
+          'Grouping plants by height and texture creates depth and a cleaner visual finish. Plant clusters can also make garden beds feel more intentional and less patchy.'
       },
       {
-        heading: 'How Sewer Repairs Work',
+        heading: 'Balance Statement and Structure',
         body:
-          'A plumber will locate the blockage, clear the line, and repair any damaged pipe sections to restore flow.'
+          'A strong garden design usually mixes feature planting with reliable structural planting. This creates interest while keeping the space cohesive.'
       },
       {
-        heading: 'Signs You Might Have a Sewer Issue',
+        heading: 'Allow Room for Growth',
         body:
-          'Gurgling drains, multiple fixtures backing up, and persistent odours are all warning signs.'
+          'Spacing matters. Proper placement helps plants establish, reduces overcrowding, and keeps the garden easier to maintain long term.'
       },
       {
-        heading: 'Conclusion: Restore Flow and Safety',
+        heading: 'Install With a Tidy Finish',
         body:
-          'Professional sewer repairs keep your system safe, reliable, and compliant.'
-      }
-    ]
-  },
-  {
-    slug: 'bathroom-plumbing-repairs',
-    title: 'Bathroom Plumbing Repairs: Showers and Toilets',
-    date: 'December 3, 2025',
-    excerpt:
-      'From leaky showers to faulty toilets, here is how bathroom plumbing issues are fixed.',
-    image:
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200',
-    sections: [
-      {
-        heading: 'Introduction: Bathroom Issues Disrupt Daily Life',
-        body:
-          'Showers and toilets are used every day, so any fault can quickly become a major inconvenience.'
-      },
-      {
-        heading: 'Common Shower Problems',
-        body:
-          'Leaks, low pressure, temperature issues, and worn fittings are common. A plumber can repair mixers, heads, and seals to restore performance.'
-      },
-      {
-        heading: 'Common Toilet Problems',
-        body:
-          'Running cisterns, weak flushes, and blockages are typical issues. Repairs often involve replacing internal components or seals.'
-      },
-      {
-        heading: 'When to Replace',
-        body:
-          'Older fixtures may be better replaced to improve efficiency and reliability. New installations can also modernise your bathroom.'
-      },
-      {
-        heading: 'Conclusion: Keep Your Bathroom Working',
-        body:
-          'Professional repairs and installations keep showers and toilets reliable and water efficient.'
-      }
-    ]
-  },
-  {
-    slug: 'hot-water-systems-electric-gas-heat-pump',
-    title: 'Hot Water Systems: Electric, Gas, and Heat Pump Repairs',
-    date: 'November 26, 2025',
-    excerpt:
-      'What causes hot water failures and how repairs or replacements are handled.',
-    image:
-      'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200',
-    sections: [
-      {
-        heading: 'Introduction: Reliable Hot Water Matters',
-        body:
-          'Hot water issues affect comfort and daily routines. Quick diagnosis keeps disruption to a minimum.'
-      },
-      {
-        heading: 'Common Hot Water Problems',
-        body:
-          'No hot water, temperature fluctuations, leaks, and unusual noises are common issues across electric, gas, and heat pump systems.'
-      },
-      {
-        heading: 'Repair or Replace?',
-        body:
-          'Older systems or repeated faults may need replacement. For newer systems, targeted repairs can restore performance.'
-      },
-      {
-        heading: 'System Types We Service',
-        body:
-          'We install and repair electric, gas, and heat pump hot water systems.'
-      },
-      {
-        heading: 'Conclusion: Get Hot Water Back Fast',
-        body:
-          'Professional hot water service keeps your system safe, efficient, and reliable.'
-      }
-    ]
-  },
-  {
-    slug: 'outdoor-plumbing-storm-water',
-    title: 'Outdoor Plumbing & Storm Water Repairs: Protect Your Property',
-    date: 'November 18, 2025',
-    excerpt:
-      'Outdoor taps and storm water drains need attention too. Here is how repairs prevent water damage.',
-    image:
-      'https://images.unsplash.com/photo-1493666438817-866a91353ca9?w=1200',
-    sections: [
-      {
-        heading: 'Introduction: Outdoor Plumbing Matters',
-        body:
-          'Outdoor taps, pipework, and storm water lines protect your property during heavy rain and daily use.'
-      },
-      {
-        heading: 'Common Outdoor Plumbing Issues',
-        body:
-          'Leaking garden taps, damaged pipework, and cracked fittings can waste water and cause soil erosion.'
-      },
-      {
-        heading: 'Storm Water Repairs and Installations',
-        body:
-          'Blocked or damaged storm water lines can lead to pooling and property damage. Repairs restore flow and improve drainage.'
-      },
-      {
-        heading: 'Preventative Tips',
-        body:
-          'Keep drains clear of debris, check for pooling after storms, and repair leaks early.'
-      },
-      {
-        heading: 'Conclusion: Keep Water Moving Away',
-        body:
-          'Reliable outdoor plumbing and storm water systems help protect your home and landscaping.'
+          'Even a great planting plan needs a clean install. Bed edges, mulch, and final tidy-up work all contribute to a professional result.'
       }
     ]
   }
@@ -334,13 +227,18 @@ export const posts = [
 const BlogPage = () => {
   return (
     <div className="blog-page">
+      <PageSeo
+        title="Landscaping Blog | Genesis Landscaping"
+        description="Read practical landscaping tips from Genesis Landscaping on new build handovers, turf, planting, garden design, restorations, and outdoor presentation."
+      />
+
       <section className="blog-hero">
         <div className="container blog-hero-container">
           <div className="blog-hero-tag">Blog</div>
-          <h1 className="blog-hero-title">Plumbing Tips & Updates</h1>
+          <h1 className="blog-hero-title">Landscaping Tips &amp; Project Ideas</h1>
           <p className="blog-hero-subtitle">
-            Practical advice from the McKay’s Plumbing and Gasfitting team to help homes stay safe, efficient, and leak
-            free.
+            Practical advice from Genesis Landscaping on turf, garden design, restorations, and getting outdoor spaces
+            looking clean and finished.
           </p>
           <a
             className="blog-hero-cta"

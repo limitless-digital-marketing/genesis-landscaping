@@ -2,16 +2,24 @@ import { Link, useParams } from 'react-router-dom'
 import ReviewsSection from '../components/ReviewsSection'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import CurvedCTASection from '../components/CurvedCTASection'
+import PageSeo from '../components/PageSeo'
 import { services } from '../data/services'
-import './EmergencyPlumbingPage.css'
+import './ServicePageShared.css'
 
 const ServiceDetailPage = () => {
   const { serviceSlug } = useParams()
   const service = services.find((entry) => entry.slug === serviceSlug)
+  const pageTitle = service
+    ? `${service.name} | Genesis Landscaping Casuarina NSW`
+    : 'Service Not Found | Genesis Landscaping'
+  const pageDescription = service
+    ? `${service.heroSubtitle} Get a free landscaping quote from Genesis Landscaping in Casuarina NSW and surrounding areas.`
+    : 'Explore Genesis Landscaping services for new builds, turf installation, planting, garden design, restorations, and yard clean ups.'
 
   if (!service) {
     return (
       <div className="service-page">
+        <PageSeo title={pageTitle} description={pageDescription} />
         <section className="service-hero">
           <div className="container service-hero-container">
             <div className="service-hero-tag">Services</div>
@@ -31,6 +39,7 @@ const ServiceDetailPage = () => {
 
   return (
     <div className="service-page">
+      <PageSeo title={pageTitle} description={pageDescription} />
       <section className="service-hero">
         <div className="container service-hero-container">
           <div className="service-hero-tag">Services</div>
@@ -47,15 +56,13 @@ const ServiceDetailPage = () => {
           <h2>{service.name}</h2>
           <p>{service.content}</p>
           <p>
-            Our team arrives on time, assesses the issue thoroughly, and explains the best path forward before any work
-            begins. We use quality materials and proven techniques to deliver repairs that last, with tidy workmanship
-            and clear communication at every step.
+            We arrive on time, assess the site, and explain the best way to complete the work before we start. Every
+            job is completed with tidy workmanship, clear communication, and a finish that suits the property.
           </p>
           <p>
-            From quick fixes to more involved solutions, McKay’s Plumbing and Gasfitting tailors every{' '}
-            {service.name.toLowerCase()} job to the needs of your property. If you are unsure what is causing the
-            problem, we will diagnose it and
-            provide honest recommendations so you can make the right call with confidence.
+            From simple touch-ups to full outdoor transformations, Genesis Landscaping tailors every{' '}
+            {service.name.toLowerCase()} job to the layout, scope, and presentation goals of your property. If you are
+            unsure where to start, we can guide you with practical recommendations that match your budget.
           </p>
         </div>
       </section>

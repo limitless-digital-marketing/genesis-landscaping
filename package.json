@@ -1,11 +1,12 @@
 {
-  "name": "brads-plumbing",
+  "name": "genesis-landscaping",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "tsc && vite build",
+    "seo:generate": "node scripts/generate-seo-files.mjs",
+    "build": "npm run seo:generate && tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },

@@ -58,13 +58,6 @@
   cursor: pointer;
 }
 
-.btn-outline-light:hover {
-  background: white;
-  color: var(--text-dark);
-  border-color: white;
-  transform: translateY(-2px);
-}
-
 /* Masonry Gallery */
 .masonry-gallery {
   column-count: 4;
@@ -149,5 +142,4 @@
     font-size: 0.75rem;
   }
 }
-
 

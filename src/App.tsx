@@ -9,10 +9,11 @@ import ServicesPage from './pages/ServicesPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
 import QuotePage from './pages/QuotePage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 
 function App() {
   const location = useLocation()
-  const hideChrome = location.pathname === '/get-quote'
+  const hideFooter = location.pathname === '/get-quote'
 
   useLayoutEffect(() => {
     if ('scrollRestoration' in window.history) {
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className="app">
-      {!hideChrome && <Header />}
+      <Header />
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -35,9 +36,10 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/get-quote" element={<QuotePage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         </Routes>
       </main>
-      {!hideChrome && <Footer />}
+      {!hideFooter && <Footer />}
     </div>
   )
 }

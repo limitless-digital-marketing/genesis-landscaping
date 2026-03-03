@@ -1,6 +1,6 @@
 /* Reviews Section */
 .reviews-section {
-  background: #081a2b;
+  background: #10261B;
   padding: var(--spacing-2xl) 0;
   color: #fff;
 }
@@ -13,11 +13,11 @@
 .reviews-eyebrow {
   display: inline-flex;
   align-items: center;
-  background: rgba(42, 121, 135, 0.2);
+  background: rgba(47, 125, 50, 0.2);
   color: #fff;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(42, 121, 135, 0.4);
+  border: 1px solid rgba(47, 125, 50, 0.4);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -67,14 +67,6 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-}
-
-.reviews-cta-button:hover {
-  background: var(--cta-dark);
-  color: #fff;
-  border-color: var(--cta-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px var(--cta-shadow);
 }
 
 .reviews-cta-mobile {
@@ -161,13 +153,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-nav-btn:hover {
-  background: var(--primary);
-  color: white;
-  border-color: var(--primary);
-  transform: translateY(-50%) scale(1.1);
-}
-
 .carousel-prev {
   left: -24px;
 }
@@ -201,12 +186,6 @@
 .carousel-page.active {
   background: var(--primary);
   border-color: var(--primary);
-  color: #fff;
-}
-
-.carousel-page:hover {
-  background: var(--primary-light);
-  border-color: var(--primary-light);
   color: #fff;
 }
 

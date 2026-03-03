@@ -14,32 +14,38 @@ const FAQSection = () => {
     {
       id: 1,
       question: 'What types of properties do you service?',
-      answer: 'We provide domestic plumbing and gasfitting maintenance for all types of dwellings, from apartments to family homes and multi-dwelling residences.'
+      answer:
+        'Genesis Landscaping works on both residential and commercial properties, including new builds, upgrades, and outdoor refresh projects.'
     },
     {
       id: 2,
-      question: 'Do you handle renovations?',
-      answer: 'Yes. We cover plumbing and gasfitting work for bathroom, kitchen, and laundry renovations, including fixture installations and pipework updates.'
+      question: 'Do you do landscaping for new builds?',
+      answer:
+        'Yes. New build landscaping is a core service, including turf, garden beds, planting, and clean presentation work for handover.'
     },
     {
       id: 3,
-      question: 'What hot water systems do you service?',
-      answer: 'We install and repair electric, gas, and heat pump hot water systems.'
+      question: 'Can you install sod or artificial turf?',
+      answer:
+        'Yes. We install both natural sod and artificial turf, and we handle the ground preparation needed for a clean finish and long-lasting result.'
     },
     {
       id: 4,
-      question: 'Do you clear drains and sewer blockages?',
-      answer: 'Yes. We handle drain cleaning, sewer blockages, and repairs to restore flow and keep your system working properly.'
+      question: 'Do you design gardens as well as install them?',
+      answer:
+        'Yes. We can help with garden design and layout planning, then complete the installation of beds, plants, turf, and finishing touches.'
     },
     {
       id: 5,
-      question: 'Do you provide tap, toilet, and shower repairs?',
-      answer: 'Yes. We repair and install taps, toilets, and showers, including leaks, running cisterns, and faulty fittings.'
+      question: 'What kind of jobs do yard clean ups include?',
+      answer:
+        'Yard clean ups can include clearing overgrowth, green waste removal, tidying garden areas, and preparing the site for new landscaping works.'
     },
     {
       id: 6,
       question: 'How do I request a quote?',
-      answer: 'Call us or submit a request through the quote form and we\'ll get back to you with clear options and pricing.'
+      answer:
+        'Call 0403 297 672 or send a request through the quote form and we will get back to you to discuss the job and next steps.'
     }
   ]
 
@@ -96,8 +102,8 @@ const FAQSection = () => {
 
           <div className="faq-image-container">
             <img 
-              src="/Images/faqs.png" 
-              alt="Professional plumber at work"
+              src="/Images/IMG_2615 (1).jpeg"
+              alt="Completed landscaping project"
               className="faq-image"
               loading="lazy"
             />

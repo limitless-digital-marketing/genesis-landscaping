@@ -3,11 +3,30 @@
   min-height: 100svh;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #fff;
+  justify-content: flex-start;
+  background: #2F7D32;
   overflow: visible;
-  padding: 3rem 1.5rem;
+  padding: 8rem 1.5rem 3rem;
+}
+
+.quote-page-intro {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto 0.25rem;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.quote-page-heading {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.35rem, 4vw, 2.1rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 /* Wrapper with padding buffer for glow effect - prevents shadow clipping */
@@ -22,9 +41,8 @@
 
 .quote-page-card {
   width: 100%;
-  max-height: calc(100svh - 3rem - 48px);
-  /* Allow scrolling if content overflows */
-  overflow-y: auto;
+  /* Remove inherited height cap so the page, not the card, handles overflow */
+  max-height: none;
   /* Ensure shadows are not clipped */
   position: relative;
 }
@@ -32,7 +50,7 @@
 /* Desktop: Centered container with proper spacing */
 @media (min-width: 769px) {
   .quote-page {
-    padding: 3rem 1.5rem;
+    padding: 8rem 1.5rem 3rem;
     overflow: visible;
   }
 
@@ -53,7 +71,7 @@
   .quote-page-card .form-logo {
     margin-bottom: 1rem;
     max-width: 140px;
-  }
+    }
 
   .quote-page-card .form-logo-text {
     max-width: none;
@@ -101,7 +119,7 @@
     font-size: 16px;
     width: 100%;
     background: #ffffff;
-    color: #2A7987;
+    color: #2F7D32;
   }
 
   .quote-page-card .hero-form-input::placeholder {
@@ -110,8 +128,8 @@
 
   .quote-page-card .hero-form-input:focus {
     outline: none;
-    border-color: #2A7987;
-    box-shadow: 0 0 0 3px rgba(42, 121, 135, 0.35);
+    border-color: #2F7D32;
+    box-shadow: 0 0 0 3px rgba(47, 125, 50, 0.35);
   }
 
   .quote-page-card select.hero-form-input {
@@ -135,14 +153,9 @@
     padding: 0 1.5rem;
   }
 
-  .quote-page-card .btn-block:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(42, 121, 135, 0.3);
-  }
-
   .quote-page-card .btn-block:active {
     transform: translateY(0);
-    box-shadow: 0 4px 8px rgba(42, 121, 135, 0.2);
+    box-shadow: 0 4px 8px rgba(47, 125, 50, 0.2);
   }
 }
 
@@ -155,10 +168,20 @@
     margin: 0 auto 1.5rem;
     visibility: visible !important;
     opacity: 1 !important;
-  }
+    }
   .quote-page {
-    padding: 1.5rem 0;
+    padding: 6.75rem 0 1.5rem;
     overflow: visible;
+  }
+
+  .quote-page-intro {
+    margin-bottom: 0;
+    padding: 0 1rem;
+  }
+
+  .quote-page-heading {
+    font-size: clamp(1.2rem, 7vw, 1.65rem);
+    letter-spacing: 0.03em;
   }
 
   .quote-page-card-wrapper {
@@ -168,7 +191,6 @@
 
   .quote-page-card {
     width: 100%;
-    overflow-y: auto;
   }
 
   .quote-page-card .hero-form-row {

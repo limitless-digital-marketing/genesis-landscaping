@@ -1,6 +1,6 @@
 .services-hero {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
-    url('/Images/services.png');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)),
+    url('/Images/service-areas.webp');
 }
 
 .services-list-section {
@@ -40,7 +40,7 @@
 .services-list-title {
   font-size: 1.25rem;
   font-weight: 800;
-  color: #2A7987;
+  color: #2F7D32;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
@@ -54,7 +54,7 @@
 
 .services-list-link {
   font-weight: 700;
-  color: #2A7987;
+  color: #2F7D32;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 0.85rem;
@@ -62,7 +62,7 @@
 }
 
 .services-list-card:hover .services-list-link {
-  color: #2A7987;
+  color: #2F7D32;
 }
 
 @media (max-width: 1024px) {
@@ -73,8 +73,8 @@
 
 @media (max-width: 768px) {
   .services-hero {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
-      url('/Images/renovation-mobile.png');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)),
+      url('/Images/service-pages-mobile.webp');
   }
 
   .services-list-grid {

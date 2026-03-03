@@ -8,8 +8,7 @@ const CurvedCTASection = () => {
   return (
     <section className="curved-cta">
       <div className="curved-cta-content">
-        <h2>READY TO TAKE THE NEXT STEP?</h2>
-        <p>GET FREE QUOTE TODAY!</p>
+        <h2>READY TO UPGRADE YOUR OUTDOOR SPACE?</h2>
         {isHomePage ? (
           <a className="curved-cta-button" href="#quote-section">
             GET FREE QUOTE

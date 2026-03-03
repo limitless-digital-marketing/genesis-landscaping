@@ -8,119 +8,111 @@ export type ServiceEntry = {
 
 export const services: ServiceEntry[] = [
   {
-    name: 'Renovations',
-    slug: 'renovations',
+    name: 'New Build Landscaping',
+    slug: 'new-build-landscaping',
     heroSubtitle:
-      'Plumbing and gasfitting upgrades for bathroom, kitchen, and laundry renovations.',
+      'Landscaping packages for new residential and commercial builds, from planning through final presentation.',
     heroImage: '/Images/services.png',
     content:
-      'We coordinate pipework changes, fixture installations, and appliance connections to keep your renovation running smoothly.'
+      'We plan and install practical, clean landscape finishes that suit the build, site access, and handover timeline.'
   },
   {
-    name: 'General Maintenance',
-    slug: 'general-maintenance',
+    name: 'Sod Installation',
+    slug: 'sod-installation',
     heroSubtitle:
-      'Domestic plumbing maintenance for all types of dwellings, from small fixes to preventative care.',
+      'Fresh lawn installation with proper ground prep for a healthy, even finish.',
     content:
-      'Routine maintenance keeps your plumbing reliable. We handle inspections, adjustments, and minor repairs across taps, toilets, showers, and pipework.'
+      'We prepare the area, level and improve soil conditions, and install turf neatly so your new lawn establishes properly.'
   },
   {
-    name: 'Drain Cleaning',
-    slug: 'drain-cleaning',
+    name: 'Artificial Turf Installation',
+    slug: 'artificial-turf-installation',
     heroSubtitle:
-      'Clear slow drains and stubborn blockages with safe, effective cleaning.',
+      'Low-maintenance artificial turf for front yards, backyards, and feature spaces.',
     heroImage: '/Images/blocked-drains.png',
     content:
-      'We remove build-up from sinks, showers, and floor wastes to restore flow and reduce future clogs.'
+      'We install synthetic turf with stable base preparation, edging, and a tidy finish that looks sharp year-round.'
   },
   {
-    name: 'Tap Repair & Installation',
-    slug: 'tap-repair-installation',
+    name: 'Garden Design',
+    slug: 'garden-design',
     heroSubtitle:
-      'Repair leaks or install new taps and mixers for kitchens, bathrooms, and laundries.',
+      'Practical garden layouts designed to suit your property style, budget, and maintenance goals.',
     content:
-      'From dripping taps to full fixture upgrades, we supply and fit quality hardware and make sure everything seals and operates correctly.'
+      'We design garden spaces that balance curb appeal and usability, with clear planning for planting, beds, and finishes.'
   },
   {
-    name: 'Outdoor Plumbing Repairs',
-    slug: 'outdoor-plumbing-repairs',
+    name: 'Garden Restorations',
+    slug: 'garden-restorations',
     heroSubtitle:
-      'Repairs for garden taps, outdoor pipework, and exposed plumbing.',
+      'Bring tired outdoor spaces back to life with a complete garden refresh.',
     content:
-      'We fix leaks, replace damaged sections, and ensure outdoor lines are protected and flowing properly.'
+      'We clean up overgrown areas, repair beds, rework planting zones, and rebuild the look and function of your garden.'
   },
   {
-    name: 'Pipe & Leak Repairs',
-    slug: 'pipe-leak-repairs',
+    name: 'Yard Clean Ups',
+    slug: 'yard-clean-ups',
     heroSubtitle:
-      'Fast diagnosis and repair of leaking or damaged pipes.',
+      'Site cleanups for overgrown, neglected, or pre-handover outdoor areas.',
     heroImage: '/Images/leak-detection.png',
     content:
-      'We locate the source of leaks and repair or replace affected pipework to prevent further damage.'
+      'We remove green waste and tidy outdoor areas so the property looks clean, presentable, and ready for the next stage.'
   },
   {
-    name: 'Sewer Blockages & Repairs',
-    slug: 'sewer-blockages',
+    name: 'Garden Beds & Edging',
+    slug: 'garden-beds-edging',
     heroSubtitle:
-      'Clear sewer blockages and repair damaged lines to restore flow.',
+      'Defined garden beds and edging that create structure and a polished final look.',
     content:
-      'We identify blockages and complete repairs to keep your sewer system operating safely and reliably.'
+      'We build and shape garden beds with clean edges so planting areas are durable, practical, and easy to maintain.'
   },
   {
-    name: 'Shower Repair',
-    slug: 'shower-repair',
+    name: 'Plant Supply & Installation',
+    slug: 'plant-supply-installation',
     heroSubtitle:
-      'Fix leaks, pressure issues, and faulty shower fittings.',
+      'Plant selection and installation to suit sunlight, layout, and maintenance requirements.',
     content:
-      'We repair mixers, shower heads, seals, and pipework to get your shower running properly again.'
+      'We source and install plants with spacing and placement that suits the design and helps the garden establish well.'
   },
   {
-    name: 'Toilet Installation & Repairs',
-    slug: 'toilet-installation-repairs',
+    name: 'Feature Planting & Clusters',
+    slug: 'feature-planting-clusters',
     heroSubtitle:
-      'Install new toilets or repair leaks, blockages, and running cisterns.',
+      'Create focal points with grouped planting and layered textures.',
     content:
-      'We handle supply, installation, and repairs for toilets to keep your bathroom reliable and efficient.'
+      'Feature planting adds depth and contrast, with clusters planned to frame entries, paths, and outdoor living areas.'
   },
   {
-    name: 'Gasfitting (Natural Gas & LPG)',
-    slug: 'gasfitting-natural-gas-lpg',
+    name: 'Mulching & Soil Prep',
+    slug: 'mulching-soil-prep',
     heroSubtitle:
-      'Natural gas and LPG gasfitting across all service areas, including piping, bottle connections, cooktops, and hot water systems.',
+      'Soil preparation and mulching for healthier plant growth and a cleaner finish.',
     content:
-      'We provide compliant gasfitting for natural gas and LPG systems, including new installations, replacements, and repairs for pipes, bottles, cooktops, and hot water services.'
+      'We prepare planting zones properly and apply mulch to help moisture retention, weed control, and presentation.'
   },
   {
-    name: 'Water Filters',
-    slug: 'water-filters',
+    name: 'Residential Landscape Refreshes',
+    slug: 'residential-landscape-refreshes',
     heroSubtitle:
-      'Water filter installation, replacements, and maintenance for cleaner, better-tasting water.',
+      'Upgrade front and back yards with clean, modern landscaping improvements.',
     content:
-      'We install and service household water filtration systems, including under-sink and point-of-entry options, to improve water quality and day-to-day reliability.'
+      'We refresh existing landscapes with new turf, planting, beds, and tidy detailing to improve street appeal and usability.'
   },
   {
-    name: 'Septic Tanks',
-    slug: 'septic-tanks',
+    name: 'Commercial Landscape Fit-Outs',
+    slug: 'commercial-landscape-fit-outs',
     heroSubtitle:
-      'Septic tank plumbing support, including pipework, repairs, and system maintenance.',
+      'Reliable landscaping installation for commercial sites and developments.',
     content:
-      'We handle septic-related plumbing work, including tank connections, pipe repairs, and maintenance to help keep your wastewater system operating safely and efficiently.'
+      'We deliver clean, efficient installs for commercial projects, coordinating scope and presentation with build timelines.'
   },
   {
-    name: 'Water Heaters (Electric, Gas & Heat Pump)',
-    slug: 'water-heaters',
+    name: 'Landscape Maintenance Touch-Ups',
+    slug: 'landscape-maintenance-touch-ups',
     heroSubtitle:
-      'Installation and repairs for electric, gas, and heat pump hot water systems.',
+      'Small landscaping improvements and touch-ups to keep finished spaces looking sharp.',
     heroImage: '/Images/water-heaters.png',
     content:
-      'We install and repair electric, gas, and heat pump hot water systems to restore reliable hot water.'
-  },
-  {
-    name: 'Storm Water Repair & Installation',
-    slug: 'storm-water',
-    heroSubtitle:
-      'Storm water repair and installation to keep runoff controlled.',
-    content:
-      'We repair and install storm water lines and drainage to protect your property during heavy rain.'
+      'We handle targeted cleanups, replanting, bed repairs, and presentation upgrades to maintain a polished finish.'
   }
 ]

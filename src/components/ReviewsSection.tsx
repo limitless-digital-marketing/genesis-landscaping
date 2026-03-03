@@ -15,70 +15,86 @@ const ReviewsSection = () => {
   const [slidesPerView, setSlidesPerView] = useState(3)
   const [touchStart, setTouchStart] = useState(0)
   const [touchEnd, setTouchEnd] = useState(0)
+  const googleReviewLink =
+    'https://www.google.com/search?kgmid=/g/11ydh0p7yz&hl=en-AU&q=JP+Landscaping+care&shndl=30&source=sh/x/loc/osrp/m5/1&kgs=ab8e32aa9cbd5023&shem=shrtsdl&utm_source=shrtsdl,sh/x/loc/osrp/m5/1#lrd=0xa4d8ac656cf02707:0x7ba54ea3f8f1fe80,1,,,,'
   // Template Google reviews
   const reviews: Review[] = [
     {
       id: 1,
-      name: 'Local Client',
-      date: 'Recent',
+      name: 'Cassandra Gasser',
+      date: '7 months ago',
       rating: 5,
-      text: 'McKay’s Plumbing were brilliant. They were helpful with every question, went above and beyond, and the communication was great. The service putting in our new tap was prompt and professional. I highly recommend McKay’s Plumbing. Great job guys and thank you so much.'
+      text: 'Jett has done a wonderful job of our lawns for the past few months and has helped me with some landscaping as well. I highly recommend him.'
     },
     {
       id: 2,
-      name: 'Local Customer',
-      date: 'Recent',
+      name: 'Hunter Bleechmore',
+      date: '5 months ago',
       rating: 5,
-      text: 'We had Brad out to service our gas wall heater and couldn’t be happier. He was on time, very personable, incredibly thorough, and explained everything as he went. Great to have a local all-in-one plumber.'
+      text: 'The service was really good with communication, had a one week turn over, and was easy and clear to work with. He also did an amazing job.'
     },
     {
       id: 3,
-      name: 'Happy Client',
-      date: 'Recent',
+      name: 'Tabrah Evans',
+      date: '7 months ago',
       rating: 5,
-      text: 'McKay’s Plumbing did an excellent job. They provided great service and offered solutions that saved us a lot of money. Would not hesitate to recommend. Thanks again McKay’s Plumbing.'
+      text: 'Jett is a hardworking and dedicated professional. He did an outstanding job on my landscaping project and demonstrated excellent manners throughout. I highly recommend him for any landscaping work.'
     },
     {
       id: 4,
-      name: 'Holiday Home Owner',
-      date: 'Recent',
+      name: 'Jayde Porter',
+      date: '7 months ago',
       rating: 5,
-      text: 'Holiday home requiring a new hot water system. Owners couldn’t attend to supervise installation. McKay’s Plumbing and Gasfitting organised everything, including the unit, installation, and other trades. The team kept me informed throughout. Completely trustworthy.'
+      text: "Jett's landscaping services was very good and neat, not only did he do a good job but the relationship we built felt like family."
     },
     {
       id: 5,
-      name: 'Local Resident',
-      date: 'Recent',
+      name: 'Maia Hoepfner-Muir',
+      date: '7 months ago',
       rating: 5,
-      text: 'Honest, reliable, and great work ethic. I would highly recommend McKay’s Plumbing. If I could give ten stars, I would.'
+      text: 'Jett does a great job. Is reliable, consistent and has the initiative to pick up on other jobs that need to be done around the property.'
     },
     {
       id: 6,
-      name: 'Happy Customer',
-      date: 'Recent',
+      name: 'Amelia Genganah',
+      date: '7 months ago',
       rating: 5,
-      text: 'Fantastic, prompt service and very easy to deal with.'
+      text: 'Jett is a well spoken man and quite reliable. He did some landscaping jobs for me, and the before and after results were incredible. Thank you again Jett.'
     },
     {
       id: 7,
-      name: 'Repeat Client',
-      date: 'Recent',
+      name: 'Matt B',
+      date: '7 months ago',
       rating: 5,
-      text: 'Work was excellent. Friendly. On time.'
+      text: 'I engaged Jett to fix my garden beds after 12 months of neglect with overgrown trees, plants, and weeds. In an afternoon he trimmed trees, cleared the beds, and added fresh mulch. Good presentation, no mess left behind, and great customer service.'
     },
     {
       id: 8,
-      name: 'Local Homeowner',
-      date: 'Recent',
+      name: 'Jacob Borrelli',
+      date: '7 months ago',
       rating: 5,
-      text: 'McKay’s Plumbing was prompt, tidy, and explained the fix clearly. Great service and would use again.'
+      text: 'Jett did a wonderful job on our landscaping job, 10/10 would recommend.'
     },
     {
       id: 9,
-      name: 'Satisfied Customer',
-      date: 'Recent',
+      name: 'Talon Coleman',
+      date: '7 months ago',
       rating: 5,
-      text: 'Quick response, quality workmanship, and fair pricing. Highly recommend McKay’s Plumbing and Gasfitting.'
+      text: "Young Jett was very helpful and did an amazing job. Couldn't have asked for more."
+    },
+    {
+      id: 10,
+      name: 'Di Bannister',
+      date: '7 months ago',
+      rating: 5,
+      text: 'Highly recommend this young man. Very polite, knowledgeable and competent. Great worker.'
+    },
+    {
+      id: 11,
+      name: 'Abigail Adams',
+      date: '8 months ago',
+      rating: 5,
+      text: 'Very professional and amazing work done.'
     }
   ]
 
@@ -176,7 +192,7 @@ const ReviewsSection = () => {
             <h2 className="reviews-title">CUSTOMER REVIEWS</h2>
             <span className="reviews-midline" aria-hidden="true"></span>
             <a
-              href="https://www.google.com/search?q=brads+plumbing+and+gasfitting&oq=brads+plumbing+and+gasfitting&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIHCAUQIRiPAjIHCAYQIRiPAtIBCDgyMDBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x6ad5c9f13374e661:0x3491450f8a0ffc70,1,,,,"
+              href={googleReviewLink}
               target="_blank"
               rel="noopener noreferrer"
               className="reviews-cta-button"
@@ -263,7 +279,7 @@ const ReviewsSection = () => {
 
         <div className="reviews-cta-mobile">
           <a
-            href="https://g.page/r/YOUR_GOOGLE_PLACE_ID/review"
+            href={googleReviewLink}
             target="_blank"
             rel="noopener noreferrer"
             className="reviews-cta-button"

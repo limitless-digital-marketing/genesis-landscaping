@@ -1,0 +1,130 @@
+.privacy-page {
+  background: linear-gradient(180deg, #f3f7f1 0%, #eef4ed 100%);
+  min-height: 100vh;
+}
+
+.privacy-hero {
+  padding: calc(var(--header-height) + 2rem) 0 1.5rem;
+}
+
+.privacy-hero-container {
+  max-width: 860px;
+}
+
+.privacy-eyebrow {
+  display: inline-flex;
+  margin: 0 0 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(47, 125, 50, 0.12);
+  border: 1px solid rgba(47, 125, 50, 0.22);
+  color: var(--primary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.privacy-hero h1 {
+  margin: 0;
+  color: #10261B;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.privacy-subtitle {
+  margin: 0.85rem 0 0;
+  max-width: 720px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.privacy-effective {
+  margin: 0.65rem 0 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.privacy-content-section {
+  padding: 0 0 3rem;
+}
+
+.privacy-content-container {
+  max-width: 860px;
+}
+
+.privacy-card {
+  background: #fff;
+  border: 1px solid rgba(16, 38, 27, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(16, 38, 27, 0.08);
+  padding: clamp(1rem, 2.5vw, 1.75rem);
+}
+
+.privacy-block + .privacy-block {
+  margin-top: 1.35rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(16, 38, 27, 0.08);
+}
+
+.privacy-block h2 {
+  margin: 0 0 0.55rem;
+  color: #10261B;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.privacy-block p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.65;
+}
+
+.privacy-block p + p {
+  margin-top: 0.65rem;
+}
+
+.privacy-block ul {
+  margin: 0.65rem 0 0;
+  padding-left: 1.1rem;
+  color: #334155;
+}
+
+.privacy-block li + li {
+  margin-top: 0.4rem;
+}
+
+.privacy-block a {
+  color: var(--primary);
+}
+
+.privacy-contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.privacy-contact-list li {
+  color: #334155;
+}
+
+.privacy-cta-note {
+  margin-top: 0.8rem !important;
+}
+
+@media (max-width: 768px) {
+  .privacy-hero {
+    padding: 2rem 0 1.2rem;
+  }
+
+  .privacy-content-section {
+    padding-bottom: 2rem;
+  }
+
+  .privacy-card {
+    border-radius: 0.85rem;
+  }
+}

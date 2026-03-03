@@ -2,20 +2,26 @@ import { Link, useParams } from 'react-router-dom'
 import ReviewsSection from '../components/ReviewsSection'
 import ServiceAreasSection from '../components/ServiceAreasSection'
 import CurvedCTASection from '../components/CurvedCTASection'
+import PageSeo from '../components/PageSeo'
 import { posts } from './BlogPage'
 import './BlogPostPage.css'
 
 const BlogPostPage = () => {
   const { slug } = useParams()
   const post = posts.find((entry) => entry.slug === slug)
+  const pageTitle = post ? `${post.title} | Genesis Landscaping Blog` : 'Landscaping Advice | Genesis Landscaping Blog'
+  const pageDescription =
+    post?.excerpt ??
+    'Practical landscaping advice from Genesis Landscaping on new builds, turf, planting, garden design, and outdoor presentation.'
 
   return (
     <div className="blog-post-page">
+      <PageSeo title={pageTitle} description={pageDescription} />
       <section className="blog-post-hero">
         <div className="container blog-post-hero-container">
           <div className="blog-post-tag">Blog</div>
-          <h1 className="blog-post-title">{post?.title ?? 'Plumbing Advice'}</h1>
-          <p className="blog-post-meta">{post?.date ?? 'McKay’s Plumbing and Gasfitting'}</p>
+          <h1 className="blog-post-title">{post?.title ?? 'Landscaping Advice'}</h1>
+          <p className="blog-post-meta">{post?.date ?? 'Genesis Landscaping'}</p>
         </div>
       </section>
 
